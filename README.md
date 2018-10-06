@@ -2,12 +2,12 @@
 Face Recognition using OpenCV and face_recognition
 
 
-###Methodology 
+### Methodology 
 
 I applied simple Machine Learning Algorithms on it. I scrapped the encodings of known images and Train my model on it. It gives 89.67 % accuracy on testing data.
 
 
-###Resources 
+### Resources 
                              Ubuntu:18.04 / Env - Python3 
 
 1. I use "face_recognition" python module. I give some Training Images to it. I use "SVM" algorithm for Training the array data.
@@ -18,7 +18,7 @@ I applied simple Machine Learning Algorithms on it. I scrapped the encodings of 
 -----you can easily install its main and contrib modules by "sudo pip3 install opencv-contrib-python".
 
 
-###Step By Step Guide 
+### Step By Step Guide 
 
 Step 1. install the reqiurements.txt file.
 		$ pip3 install -r requirements.txt
