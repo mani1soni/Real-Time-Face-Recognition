@@ -2,13 +2,18 @@
 Face Recognition using OpenCV and face_recognition
 
 
+A real time face recognition system is capable of identifying or verifying a person from a video frame.
+To recognize the face in a frame, first you need to detect whether the face is present in the frame. 
+If it is present, mark it as a region of interest (ROI), extract the ROI and process it for facial recognition
+
+
 ### Methodology 
 
 I applied simple Machine Learning Algorithms on it. I scrapped the encodings of known images and Train my model on it. It gives 89.67 % accuracy on testing data.
 
 
-### Resources 
-                             Ubuntu:18.04 / Env - Python3 
+### Prerequisites 
+    Ubuntu:18.04 / Env - Python3 
 
 1. I use "face_recognition" python module. I give some Training Images to it. I use "SVM" algorithm for Training the array data.
 -----you can easily install it by "sudo pip3 install face_recognition".
