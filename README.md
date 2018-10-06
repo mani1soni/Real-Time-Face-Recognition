@@ -5,6 +5,7 @@ Face Recognition using OpenCV and face_recognition
 ### Methodology 
 
 I applied simple Machine Learning Algorithms on it. I scrapped the encodings of known images and Train my model on it. It gives 89.67 % accuracy on testing data.
+Using face_recognition python library can help in real-time face recognition. 
 
 
 ### Resources 
