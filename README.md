@@ -14,7 +14,6 @@ This project contains Face detection and Face recognition using the famous Open 
 #### Face Recognition
 <p> For Face Recognition you need to download both <a href = "https://opencv.org/">OpenCV</a> and <a href="https://pypi.org/project/face_recognition/">face_recognition</a> libraries. </p> 
 
-I applied simple Machine Learning Algorithms on it. I scrapped the encodings of known images and Train my model on it. It gives 89.67 % accuracy on testing data.
 
 
 #### Resources 
