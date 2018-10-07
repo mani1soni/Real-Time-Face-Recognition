@@ -10,8 +10,7 @@ import sys
 imagePath = sys.argv[1]
 
 # For face detection keep:
-# cascPath = "haarcascade_frontalface_default.xml"
-cascPath = sys.argv[2]
+cascPath = '../haarcascade_frontalface_default.xml'
 
 # Initializing the face cascade from the xml file
 # given via the arguments in cascPath.
