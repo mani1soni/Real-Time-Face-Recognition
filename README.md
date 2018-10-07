@@ -1,38 +1,36 @@
 # Real-Time-Face-Recognition
-Face Recognition using OpenCV and face_recognition
+This project contains Face detection and Face recognition using the famous Open Source Libraries OpenCV and face_recognition.
 
 
-### Methodology 
+> **Note:** It is not feasable to build customized CNN model and train it using thousands of Images as it'll take a lot of time depending on your hardware. Always prefer Transfer Learning over doing everything from scratch.
+ 
+
+
+#### Face Detection
+<p> For Face Detection you need to download <a href = "https://opencv.org/">OpenCV</a>. The one used in the project is OpenCV v2. </p>
+
+
+
+#### Face Recognition
+<p> For Face Recognition you need to download both <a href = "https://opencv.org/">OpenCV</a> and <a href="https://pypi.org/project/face_recognition/">face_recognition</a> libraries. </p> 
 
 I applied simple Machine Learning Algorithms on it. I scrapped the encodings of known images and Train my model on it. It gives 89.67 % accuracy on testing data.
 
 
-### Resources 
+#### Resources 
                              Ubuntu:18.04 / Env - Python3 
 
-1. I use "face_recognition" python module. I give some Training Images to it. I use "SVM" algorithm for Training the array data.
------you can easily install it by "sudo pip3 install face_recognition".
+
+#### Step By Step Guide 
+
+* Install the requirements.txt file in each of the Face Detection and Face Recognition directories.
+   * $ pip3 install -r requirements.txt
 
 
-2. I handle the webcam by OpenCV and Process all Image Processing By it.
------you can easily install its main and contrib modules by "sudo pip3 install opencv-contrib-python".
+
+* Do not forget to provide the arguments while running the detection and recognition scripts. Details of the arguments are given in respective README's.
 
 
-### Step By Step Guide 
 
-Step 1. install the reqiurements.txt file.
-		$ pip3 install -r requirements.txt
-
-Step 2. give the image's path and name in friendsreco.py file on line - 10.
-
-
-Step 3. Run the python code.
-		$ python3 friendsreco.py
-
-
-################################################################################
-
-
-Further Enhancemets --- 
-			Frozen Training Process
-			Resources Based Labelized Training
+* Run the python code according to the application.
+   * $ python3  <file_name>
