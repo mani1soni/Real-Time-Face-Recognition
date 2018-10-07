@@ -33,4 +33,5 @@ I applied simple Machine Learning Algorithms on it. I scrapped the encodings of 
 
 
 * Run the python code according to the application.
-   * $ python3 <file_name>
+   * $ python3  <file_name>
+
