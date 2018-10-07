@@ -7,48 +7,13 @@ import cv2
 video_capture = cv2.VideoCapture(0)
 
 # Loading a sample picture for Trainig
-manish_image0 = face_recognition.load_image_file("/home/manish/Documents/projectabs/738.jpg")
-manish_image1 = face_recognition.load_image_file("/home/manish/Documents/projectabs/manish1.jpg")
-manish_image2 = face_recognition.load_image_file("/home/manish/Documents/projectabs/manish2.jpg")
-ankit_image0 = face_recognition.load_image_file("/home/manish/Documents/projectabs/ankit.jpg")
-ankit_image1 = face_recognition.load_image_file("/home/manish/Documents/projectabs/ankit1.jpg")
-ankit_image2 = face_recognition.load_image_file("/home/manish/Documents/projectabs/ankit2.jpg")
-jay_image0 = face_recognition.load_image_file("/home/manish/Documents/projectabs/jayg1.jpg")
-jay_image1 = face_recognition.load_image_file("/home/manish/Documents/projectabs/jayg2.jpg")
-jay_image2 = face_recognition.load_image_file("/home/manish/Documents/projectabs/jayg3.jpg")
-manish_face_encoding0 = face_recognition.face_encodings(manish_image0)[0]
-manish_face_encoding1 = face_recognition.face_encodings(manish_image1)[0]
-manish_face_encoding2 = face_recognition.face_encodings(manish_image2)[0]
-ankit_face_encoding0 = face_recognition.face_encodings(ankit_image0)[0]
-ankit_face_encoding1 = face_recognition.face_encodings(ankit_image1)[0]
-ankit_face_encoding2 = face_recognition.face_encodings(ankit_image2)[0]
-jay_face_encoding0 = face_recognition.face_encodings(jay_image0)[0]
-jay_face_encoding1 = face_recognition.face_encodings(jay_image1)[0]
-jay_face_encoding2 = face_recognition.face_encodings(jay_image2)[0]
+images = ['738.jpg', 'manish1.jpg', 'manish2.jpg', 'ankit.jpg', 'ankit1.jpg', 'ankit2.jpg', 'jayg1.jpg', 'jayg2.jpg', 'jayg3.jpg']
+image = [face_recognition.load_image_file("/home/manish/Documents/projectabs/"+i) for i in images]
 
 # Creating arrays of known face encodings and their names
-known_face_encodings = [
-    manish_face_encoding0,
-    manish_face_encoding1,
-    manish_face_encoding2,
-    ankit_face_encoding0,
-    ankit_face_encoding1,
-    ankit_face_encoding2,
-    jay_face_encoding0,
-    jay_face_encoding1,
-    jay_face_encoding2,
-]
-known_face_names = [
-    "Manish",
-    "Manish",
-    "Manish",
-    "Ankit",
-    "Ankit",
-    "Ankit",
-    "Jaydeep",
-    "Jaydeep",
-    "Jaydeep"
-]
+encoding = [face_recognition.face_encodings(i)[0] for i in image]
+
+known_face_names = ["Manish", "Manish", "Manish", "Ankit", "Ankit", "Ankit", "Jaydeep", "Jaydeep", "Jaydeep"]
 
 # Initializing some variables
 face_locations = []
