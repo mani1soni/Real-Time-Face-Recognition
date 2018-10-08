@@ -2,6 +2,7 @@
 This project contains Face detection and Face recognition using the famous Open Source Libraries OpenCV and face_recognition.
 
 
+
 > **Note:** It is not feasable to build customized CNN model and train it using thousands of Images as it'll take a lot of time depending on your hardware. Always prefer Transfer Learning over doing everything from scratch.
  
 
@@ -9,6 +10,9 @@ This project contains Face detection and Face recognition using the famous Open 
 #### Face Detection
 <p> For Face Detection you need to download <a href = "https://opencv.org/">OpenCV</a>. The one used in the project is OpenCV v2. </p>
 
+
+### Prerequisites 
+    Ubuntu:18.04 / Env - Python3 
 
 
 #### Face Recognition
