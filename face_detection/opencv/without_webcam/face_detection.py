@@ -4,7 +4,7 @@ import cv2
 import sys
 
 # Passing image and cascade names as command-line arguments imagePath should be dir location of the image you want detection for.
-imagePath = 'download.jpeg'
+imagePath = sys.argv[1]
 
 # For face detection keep:
 cascPath = '../haarcascade_frontalface_default.xml'
@@ -29,7 +29,7 @@ faces = faceCascade.detectMultiScale(
     gray,
     scaleFactor=1.1,
     minNeighbors=5,
-    minSize=(30, 30),
+    minSize=(30, 30)
 )
 
 # The function returns a list of rectangles in which it believes it found a face.
